@@ -1,2 +1,3 @@
 # odin-recipes
 Project: Recipes from Foundations Course of The Odin Project
+In the Introduction to HTML section of the course ,we learned different part of webpage and how to use different HTML tag to create it.his also learned about file system of a website and absolute and relateve way to point to . This is the last part of the project where we have to create a simple website and put the theory we learn into practice.
