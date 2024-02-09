@@ -10,31 +10,24 @@ body{
     margin: 32px;
     text-align: center;
     background-color: bisque;
-    
+    width:auto;    
 }
 
-.recipes{
-
-    font-family: "Cursive","Lucida Console", "Courier New", monospace;
-    font-size: 72px;
-    padding: 32px;
-    margin: 32px;
-    text-align: center;
-    background-color: bisque;
-    
-    
-}
-
-.recipes img {
-    width: 500px;
-    height: 500px;
- 
-  }
-  
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+   display:flex;
+   justify-content: center;
+   background-color: bisque;
+   padding: 32px;
+   margin: 32px;
+
+
 }
 
+img{
+    height: 500px;
+    width: 500px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 10px;
+}
   
