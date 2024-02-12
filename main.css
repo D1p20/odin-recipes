@@ -1,6 +1,13 @@
+html, 
+body {
+    height: 100%;
+}
+
 body{
 
-    background-color: rgb(140, 31, 31);
+    background-image: url("bg.webp");
+    background-size: fill;
+
 }
 .banner{
 
@@ -9,25 +16,102 @@ body{
     padding: 32px;
     margin: 32px;
     text-align: center;
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.614);
     width:auto;    
+    
 }
 
-.grid-container {
+.grid-container{
    display:flex;
+   flex:1;
    justify-content: center;
-   background-color: bisque;
+   align-items: start;
+   background-color: rgba(255, 228, 196, 0.614);
    padding: 32px;
    margin: 32px;
+}
 
+.recipes{
+    display: flex;
+    flex:1 1 200px;
+    border: 10px solid rgb(226, 161, 82);
+    border-radius: 10%;
+    padding: 0%;
+    margin: 5px;
+    height: 400px;
+    width: 500px;
+    
 
 }
 
-img{
-    height: 500px;
-    width: 500px;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 10px;
+.lasagna{
+
+    margin: 5px auto 5px auto;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/lasagna.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.egg{
+    margin: 5px auto 5px auto;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/eggs.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast{
+    margin: 5px auto 5px auto;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/toast.jpeg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
   
+
+a:link, a:visited {
+    
+    background-color: rgb(140, 31, 31, 0.5);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a:hover, a:active {
+    background-color:rgb(140, 31, 31, 0.9);
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 228, 196, 0.614);
+    color: black;
+    text-align: center;
+  }
+
+@media (max-width: 1000px) {
+    .grid-container {
+      flex-direction: column;
+    }
+    .recipes{
+        height: 800px;
+        width: 500px;
+    }
+    .footer{
+        position: relative;
+    }
+    
+  }
