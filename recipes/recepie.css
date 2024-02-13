@@ -1,28 +1,126 @@
-body{
-
-    background-color: rgb(140, 31, 31);
+html,body{
+    height: 100%;
 }
-.banner{
 
+body{
+    background-image: url("bg2.webp");
+    background-size: fill;
+    min-height: 100%;
+}
+
+
+.banner{
     font-family: "Cursive","Lucida Console", "Courier New", monospace;
     font-size: 72px;
     padding: 32px;
     margin: 32px;
     text-align: center;
-    background-color: bisque;
-    
+    background-color: rgba(255, 228, 196, 0.614);
+    width:auto;   
 }
 
-.recepie_container {
-    font-family: "Cursive","Lucida Console", "Courier New", monospace;
-    font-size: 36px;
+.body{
+
     padding: 32px;
     margin: 32px;
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.614); 
+    display: flex;
+    flex:1
+
+}
+
+.recipe_container{
+ 
+    font-size: 24px;
+    background-color: rgba(255, 228, 196, 0.614);
+    display: flex;
+    flex: 1;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: auto;
+    overflow-y:scroll;
+    overflow-x:auto;
 }
 
 li{
-    margin: 32px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
 
 }
 
+
+
+.side{
+
+    width: 200px;
+    height: auto;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    text-align: left;
+    
+    
+}
+h4{
+
+    text-align:justify;
+    text-decoration: underline;
+}
+
+
+
+.bottom{
+
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 10px;
+
+
+}
+
+.bottom-pic>img{
+
+    height: 400px;
+    width: 500px;
+
+
+}
+.footer {
+    padding: 0px;
+    width: 100%;
+    background-color: rgba(255, 228, 196, 0.614);
+    color: black;
+    text-align: center;
+  }
+
+@media (max-width: 1000px)
+{
+
+.bottom-pic>img{
+        height: 200px;
+        width:250px;
+
+    }
+}
+@media (max-width: 800px) {
+    .body{
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+    .bottom-pic>img{
+
+        height: 150px;
+        width:200px;
+    }
+
+  }
